@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<head>
+  <title>Surat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="page2.html">Surat</a>
+  <a href="page3.html">Musik</a>
+  <a href="page4.html">Hiasan</a>
+  <a href="page5.html">Hiasan</a>
+</nav>
+
+<div class="container">
+  <h1>💌 Surat Untuk Dea 💌</h1>
+
+  <div class="envelope" onclick="toggleLetter()">
+    <div class="open-text">Klik untuk buka / tutup</div>
+  </div>
+
+  <div class="letter" id="letter">
+    <p>
+      Selamat ulang tahun Dea 🤍<br><br>
+      Semoga sehat selalu dan dipanjangkan umurnya serta diberikan
+      kemudahan di setiap urusannya dan tercapai cita-citanya ✨<br><br>
+      Maaf ya abang atha cuma bisa ngasih hadiah gini buat Dea,
+      semoga Dea senang hehe......<br><br>
+      💕 Dari: <b>Abang Atha</b>
+    </p>
+  </div>
+</div>
+
+<script>
+function toggleLetter(){
+  let l = document.getElementById("letter");
+  l.style.display = l.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

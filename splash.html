@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>For Dea 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="splash">
+  <div class="splash-box">
+    <h1>💖 Hai Dea 💖</h1>
+    <p>Masukkan PIN untuk membuka hadiah 🎁</p>
+
+    <input type="password" id="pin" placeholder="••••••">
+
+    <button onclick="checkPin()">Buka</button>
+
+    <div class="error" id="error"></div>
+  </div>
+</div>
+
+<script>
+function checkPin() {
+  const pin = document.getElementById("pin").value;
+  const error = document.getElementById("error");
+
+  if (pin === "040326") {
+    window.location.href = "index.html";
+  } else {
+    error.innerText = "PIN salah 😢 coba lagi ya";
+  }
+}
+</script>
+
+</body>
+</html>
